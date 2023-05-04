@@ -12,7 +12,7 @@ const firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
 
-  const projectStoreage = firebase.storage();
+  const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
-
-  export { projectStoreage, projectFirestore };
+  
+  export { projectStorage, projectFirestore };
