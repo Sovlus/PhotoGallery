@@ -1,9 +1,9 @@
+// musi być compat od wersji v9 firebase > bez compat nie działa 30 error
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/storage';
 import 'firebase/compat/firestore';
 
-
-
+// config z firebase >
 const firebaseConfig = {
     apiKey: "AIzaSyDanxhovzCjDt8K0GdaAmngQsX_MsfCpEg",
     authDomain: "gallery-64590.firebaseapp.com",

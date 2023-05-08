@@ -1,5 +1,9 @@
+//nie ruszać
+
 import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
+
+//all
 
 const UploadForm = () => {
     const [file, setFile] = useState(null);

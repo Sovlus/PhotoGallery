@@ -1,5 +1,8 @@
+//nie ruszać
 import { useState, useEffect } from 'react';
 import { projectStorage, projectFirestore } from '../firebase/config';
+
+//all
 
 const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
@@ -27,4 +30,5 @@ const useStorage = (file) => {
   return { progress, url, error };
 }
 
+//export
 export default useStorage;
