@@ -6,6 +6,7 @@ const useFirestore = (collection) => {
 
     useEffect(() => {
         projectFirestore.collection(collection)
+        .orderBy('Stworzono', 'najnowsze')
         .onSnapshot((snap) => {
              let documents = [];
              snap.forEach(doc => {
