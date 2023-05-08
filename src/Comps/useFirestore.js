@@ -5,7 +5,7 @@ const useFirestore = (collection) => {
     const [dokumenty, setDocs] =useState ([]);
 
     useEffect(() => {
-        projectFirestore.collection(collection)
+        const unsub = projectFirestore.collection(collection)
         .orderBy('Stworzono', 'najnowsze')
         .onSnapshot((snap) => {
              let documents = [];
