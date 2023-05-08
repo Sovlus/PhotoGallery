@@ -13,7 +13,9 @@ const useFirestore = (collection) => {
                 documents.pust({...doc.data(), id: doc.id})
              });
              setDocs(documents)
-        })
+        });
+
+        return () => unsub();
     }, [collection])
 
     return { dokumenty };
