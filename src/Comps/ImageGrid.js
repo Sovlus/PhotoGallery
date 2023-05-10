@@ -1,5 +1,6 @@
 import React from 'react';
-import useFirestore from '../Comps/useFirestore';
+import useFirestore from './useFirestore';
+import { motion } from 'framer-motion';
 
 const ImageGrid = () => {
     const { dokumenty } = useFirestore('images')
