@@ -1,7 +1,7 @@
 //nie ruszać
 
 import React, { useEffect } from 'react';
-import useStorage from './Storage';
+import Storage from './Storage';
 import { motion } from 'framer-motion';
 
 //all
