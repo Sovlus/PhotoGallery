@@ -1,13 +1,13 @@
 //nie ruszać
 
 import React, { useEffect } from 'react';
-import useStorage from './useStorage';
+import useStorage from './Storage';
 import { motion } from 'framer-motion';
 
 //all
 
 const ProgressBar = ({ file, setFile }) => {
-  const { progress, url } = useStorage(file);
+  const { progress, url } = Storage(file);
 
   useEffect(() => {
     if (url) {
