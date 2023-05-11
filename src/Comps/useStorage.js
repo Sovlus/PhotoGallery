@@ -4,7 +4,7 @@ import { projectStorage, projectFirestore } from '../firebase/config';
 
 //all
 
-const useStorage = (file) => {
+const Storage = (file) => {
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState(null);
   const [url, setUrl] = useState(null);
@@ -31,4 +31,4 @@ const useStorage = (file) => {
 }
 
 //export
-export default useStorage;
+export default Storage;
