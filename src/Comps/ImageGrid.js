@@ -1,5 +1,5 @@
 import React from 'react';
-import useFirestore from './useFirestore';
+import useFirestore from './Firestore';
 import { motion } from 'framer-motion';
 
 const ImageGrid = ({ wybrane }) => {

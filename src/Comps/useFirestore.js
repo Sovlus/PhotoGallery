@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { projectFirestore } from '../firebase/config';
 
-const useFirestore = (collection) => {
+const Firestore = (collection) => {
     const [dokumenty, setDocs] =useState ([]);
 
     useEffect(() => {
@@ -21,4 +21,4 @@ const useFirestore = (collection) => {
     return { dokumenty };
 }
 
-export default useFirestore;
+export default Firestore;
